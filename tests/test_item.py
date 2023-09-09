@@ -3,7 +3,6 @@ import pytest
 from src.item import Item
 
 
-
 @pytest.fixture()
 def test_class():
     return Item("Смартфон", 12000, 2)
@@ -31,6 +30,6 @@ def test_instantiate_from_csv():
 
 
 def test_string_to_number():
-    assert Item.string_to_number('5') == 5
-    assert Item.string_to_number('5.0') == 5
-    assert Item.string_to_number('5.5') == 5
+    assert Item.string_to_number('6') == 6
+    assert Item.string_to_number('7.0') == 7
+    assert Item.string_to_number('8.7') == 8
